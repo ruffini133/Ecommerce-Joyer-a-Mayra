@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <h1>Joyeria</h1>
+        <h1 class="nombre-sitio">Joyeria <span>Mayra</span></h1>
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.htm">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.htm">Nosotros</a>
+            <a class="enlace" href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
 
-    <section>
-        <h2>Categorías de Productos</h2>
+    <div class="hero"></div>
 
-        <div>
-            <img src="img/Oro.jpg" alt="Imagen Categoría" width="300px">
-            <a href="">Oro</a>
-        </div>
+    <section class="contenedor categorias">
+        <h2>Categorías de <span>Productos</span></h2>
 
-        <div>
-            <img src="img/acero.jpg" alt="Imagen Categoría" width="300px">
-            <a href="">Acero</a>
-        </div>
-
-        <div>
-            <img src="img/plata.jpg" alt="Imagen Categoría" width="300px">
-            <a href="">Plata</a>
+        <div class="listado-categorias">
+            <div class="categoria">
+                <img src="img/Oro.jpg" alt="Imagen Categoría" width="300px">
+                <a href="">Oro</a>
+            </div>
+            <div class="categoria">
+                <img src="img/acero.jpg" alt="Imagen Categoría" width="300px">
+                <a href="">Acero</a>
+            </div>
+            <div class="categoria">
+                <img src="img/plata.jpg" alt="Imagen Categoría" width="300px">
+                <a href="">Plata</a>
+            </div>
         </div>
 
     </section>
 
-    <section>
+    <section class="sobre-nosotros">
         <div>
             <h2>Sobre Nosotros</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero molestiae in voluptatum facilis, obcaecati quam veritatis mollitia ducimus nulla expedita dolore reiciendis cupiditate alias repudiandae blanditiis illum excepturi amet vitae?</p>
@@ -124,7 +135,7 @@
         <div>
             <h3>Categorías</h3>
 
-            <nav>
+            <nav class="navegacion">
                 <a href="">Oro</a>
                 <a href="">Acero</a>
                 <a href="">Plata</a>
@@ -136,19 +147,19 @@
         <div>
             <h3>Sobre Nosotros</h3>
 
-            <nav>
+            <nav class="navegacion">
                 <a href="">Nuestra Historia</a>
                 <a href="">Mision y valores</a>
                 <a href="">Carreras</a>
                 <a href="">Política de Privacidad</a>
-                <a href="">Términos del Servicio</a>
+                <a class="enlace" href="">Términos del Servicio</a>
             </nav>
         </div>
 
         <div>
             <h3>Soporte</h3>
 
-            <nav>
+            <nav class="navegacion">
                 <a href="">Preguntas Frecuentes</a>
                 <a href="">Ayuda en Línea</a>
                 <a href="">Confianza y Seguridad</a>
