@@ -258,3 +258,94 @@ img {
     margin-top: 6rem;
     text-align: center;
 }
+
+
+
+/* Media queries */
+
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        background-size: cover;
+        height: 300px; 
+    }
+
+    .listado-categorias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .categoria {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .producto {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+
+    .producto img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .sobre-nosotros {
+        background-image: none; 
+        padding: 5rem 0;
+    }
+
+    .sobre-nosotros-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-nosotros {
+        flex-basis: 100%; 
+        padding: 0;
+        text-align: center; 
+        color: #FFFFFF;
+    }
+
+    .producto:nth-child(1) img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    }
+
+    .producto:nth-child(1) {
+        grid-column: 1 / 7;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .producto:nth-child(4) {
+        grid-column: 1 / 4;
+    }
+
+    .producto:nth-child(5) {
+        grid-column: 4 / 7;
+    }
+
+    .producto:nth-child(6) {
+        grid-column: 1 / 7;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+        font-size: 1.2rem;
+    }
+
+    footer h3 {
+        font-size: 1.8rem;
+    }
+
+}
